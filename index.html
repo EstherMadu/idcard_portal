@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Idcard Portal</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>Id-Card Registration</header>
+
+      <form action="#">
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Personal Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label> Full Name </label>
+                <input type="text" placeholder="Enter your name" required />
+              </div>
+
+              <div class="input-field">
+                <label> Date Of Birth </label>
+                <input
+                  type="date"
+                  placeholder="Enter your birth date"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Email </label>
+                <input
+                  type="text"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label> Mobile Number </label>
+                <input
+                  type="number"
+                  placeholder="Enter mobile number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Gender </label>
+                <select name="" id="">
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label> Marital Status </label>
+                <select>
+                  <option>Single</option>
+                  <option>Married</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="details ID">
+            <span class="title">Identity Details</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label> ID Type </label>
+                <input
+                  class="text-file"
+                  type="text"
+                  placeholder="Enter your ID type"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> ID Number </label>
+                <input
+                  type="number"
+                  placeholder="Enter your ID number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Issued Date </label>
+                <input type="date" placeholder="Enter issued date" required />
+              </div>
+
+              <div class="input-field">
+                <label> Issued State </label>
+                <select>
+                  <option>Abia</option>
+                  <option>Adamawa</option>
+                  <option>Akwa Ibom</option>
+                  <option>Anambra</option>
+                  <option>Bauchi</option>
+                  <option>Bayelsa</option>
+                  <option>Benue</option>
+                  <option>Borno</option>
+                  <option>Cross River</option>
+                  <option>Delta</option>
+                  <option>Ebonyi</option>
+                  <option>Edo</option>
+                  <option>Ekiti</option>
+                  <option>FCT Abuja</option>
+                  <option>Gombe</option>
+                  <option>Imo</option>
+                  <option>Jigawa</option>
+                  <option>Kaduna</option>
+                  <option>Kano</option>
+                  <option>Katsina</option>
+                  <option>Kebbi</option>
+                  <option>Kogi</option>
+                  <option>Kwara</option>
+                  <option>Lagos</option>
+                  <option>Nasarawa</option>
+                  <option>Niger</option>
+                  <option>Ogun</option>
+                  <option>Ondo</option>
+                  <option>Osun</option>
+                  <option>Oyo</option>
+                  <option>Plateau</option>
+                  <option>Rivers</option>
+                  <option>Sokoto</option>
+                  <option>Taraba</option>
+                  <option>Yobe</option>
+                  <option>Zamfara</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label> Expiry Date </label>
+                <input type="date" placeholder="Enter expiry date" required />
+              </div>
+
+              <div class="input-field">
+                <label> PF Number </label>
+                <input
+                  type="text"
+                  placeholder="Enter your PF number"
+                  required
+                />
+              </div>
+            </div>
+
+            <button class="nextBtn">
+              <span class="btnText">Next</span>
+              <i class="uil uil-navigator"> </i>
+            </button>
+          </div>
+        </div>
+
+        <!-- SECOND SECTION -->
+        <div class="form second">
+          <div class="details personal">
+            <span class="title">Official Info</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label> Posting </label>
+                <input type="text" placeholder="Posting" required />
+              </div>
+
+              <div class="input-field">
+                <label> State </label>
+                <select>
+                  <option>Abia</option>
+                  <option>Adamawa</option>
+                  <option>Akwa Ibom</option>
+                  <option>Anambra</option>
+                  <option>Bauchi</option>
+                  <option>Bayelsa</option>
+                  <option>Benue</option>
+                  <option>Borno</option>
+                  <option>Cross River</option>
+                  <option>Delta</option>
+                  <option>Ebonyi</option>
+                  <option>Edo</option>
+                  <option>Ekiti</option>
+                  <option>FCT Abuja</option>
+                  <option>Gombe</option>
+                  <option>Imo</option>
+                  <option>Jigawa</option>
+                  <option>Kaduna</option>
+                  <option>Kano</option>
+                  <option>Katsina</option>
+                  <option>Kebbi</option>
+                  <option>Kogi</option>
+                  <option>Kwara</option>
+                  <option>Lagos</option>
+                  <option>Nasarawa</option>
+                  <option>Niger</option>
+                  <option>Ogun</option>
+                  <option>Ondo</option>
+                  <option>Osun</option>
+                  <option>Oyo</option>
+                  <option>Plateau</option>
+                  <option>Rivers</option>
+                  <option>Sokoto</option>
+                  <option>Taraba</option>
+                  <option>Yobe</option>
+                  <option>Zamfara</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label> Location</label>
+                <input
+                  type="text"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Date Of First Appointment </label>
+                <input type="date" required />
+              </div>
+
+              <div class="input-field">
+                <label> Confirmation Date</label>
+                <input type="date" required />
+              </div>
+
+              <div class="input-field">
+                <label> Current Appointment Date </label>
+                <input type="date" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="details ID">
+            <div class="fields">
+              <div class="input-field">
+                <label> Salary(CONRAISS) </label>
+                <input type="text" placeholder="Salary (CONRAISS)" required />
+              </div>
+
+              <div class="input-field">
+                <label> Qualification </label>
+                <input type="text" placeholder="Qualification" required />
+              </div>
+
+              <div class="input-field">
+                <label> Designation </label>
+                <input type="text" placeholder="Designation" required />
+              </div>
+
+              <div class="input-field">
+                <label> Select Where Applicable </label>
+                <select>
+                  <option>New ID Card Request</option>
+                  <option>Reissue ID Card Request</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label> Nationality </label>
+                <input type="text" placeholder="nationality" required />
+              </div>
+
+              <div class="input-field">
+                <label> State Of Origin </label>
+                <select>
+                  <option>Abia</option>
+                  <option>Adamawa</option>
+                  <option>Akwa Ibom</option>
+                  <option>Anambra</option>
+                  <option>Bauchi</option>
+                  <option>Bayelsa</option>
+                  <option>Benue</option>
+                  <option>Borno</option>
+                  <option>Cross River</option>
+                  <option>Delta</option>
+                  <option>Ebonyi</option>
+                  <option>Edo</option>
+                  <option>Ekiti</option>
+                  <option>FCT Abuja</option>
+                  <option>Gombe</option>
+                  <option>Imo</option>
+                  <option>Jigawa</option>
+                  <option>Kaduna</option>
+                  <option>Kano</option>
+                  <option>Katsina</option>
+                  <option>Kebbi</option>
+                  <option>Kogi</option>
+                  <option>Kwara</option>
+                  <option>Lagos</option>
+                  <option>Nasarawa</option>
+                  <option>Niger</option>
+                  <option>Ogun</option>
+                  <option>Ondo</option>
+                  <option>Osun</option>
+                  <option>Oyo</option>
+                  <option>Plateau</option>
+                  <option>Rivers</option>
+                  <option>Sokoto</option>
+                  <option>Taraba</option>
+                  <option>Yobe</option>
+                  <option>Zamfara</option>
+                </select>
+              </div>
+
+              <button class="nextBtnSecond">
+                <span class="btnText">Next</span>
+                <i class="uil uil-navigator"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- THIRD SECTION -->
+        <div class="form third">
+          <div class="details personal">
+            <span class="title">Upload Documents </span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label> Upload Passport </label>
+                <input
+                  type="file"
+                  placeholder="Posting"
+                  accept="image/jpeg, image/png, image/jpg"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Upload Signature </label>
+                <input
+                  type="file"
+                  placeholder="Posting"
+                  accept="image/jpeg, image/png, image/jpg"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Upload Appointment Letter </label>
+                <input
+                  type="file"
+                  placeholder="Posting"
+                  accept="image/jpeg, image/png, image/jpg"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Upload Confirmation Letter</label>
+                <input
+                  type="file"
+                  placeholder="Posting"
+                  accept="image/jpeg, image/png, image/jpg"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Upload Current Appointment Letter </label>
+                <input
+                  type="file"
+                  placeholder="Posting"
+                  accept="image/jpeg, image/png, image/jpg"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Upload Certificate </label>
+                <input
+                  type="file"
+                  placeholder="Posting"
+                  accept="image/jpeg, image/png, image/jpg"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label> Upload Any Other Documents </label>
+                <input
+                  type="file"
+                  placeholder="Posting"
+                  accept="image/jpeg, image/png, image/jpg"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="details ID">
+            <div class="buttons">
+              <div class="backBtn">
+                <i class="uil uil-navigator"> </i>
+                <span class="btnText">Back</span>
+              </div>
+
+              <button class="nextBtn">
+                <span class="btnText">Next</span>
+                <i class="uil uil-navigator"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="assets/scripts/index.js"></script>
+  </body>
+</html>
