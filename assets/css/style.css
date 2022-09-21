@@ -136,7 +136,8 @@ form .first-section {
 }
 
 .container form button,
-.backBtn {
+.backBtn,
+.backBtn3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,16 +160,22 @@ form .first-section {
   font-weight: 400;
 }
 
+.buttons {
+  width: 100%;
+}
+
 form button:hover {
   background-color: rgb(27, 58, 23);
 }
 
 form button i,
-form .backBtn i {
+form .backBtn i,
+form .backBtn3 i {
   margin: 0 6px;
 }
 
-form .backBtn i {
+form .backBtn i,
+form .backBtn3 i {
   transform: rotate(180deg);
 }
 
@@ -178,6 +185,7 @@ form .buttons {
 }
 
 form .buttons button,
-.backBtn {
+.backBtn,
+.backBtn3 {
   margin-right: 14px;
 }
