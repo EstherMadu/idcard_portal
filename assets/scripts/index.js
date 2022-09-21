@@ -12,7 +12,7 @@ const thirdForm = document.getElementById("form-3");
 
 nextBtn.addEventListener("click", function () {
   allInput.forEach((input) => {
-    if (input.value == "") {
+    if (input.value != "") {
       formId.classList.remove("active");
       nextForm.classList.add("active");
     }
