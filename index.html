@@ -16,40 +16,28 @@
       <header>Id-Card Registration</header>
 
       <form action="#">
-        <div class="form first">
+        <div class="first-section active form first" id="form-1">
           <div class="details personal">
             <span class="title">Personal Details</span>
 
             <div class="fields">
               <div class="input-field">
                 <label> Full Name </label>
-                <input type="text" placeholder="Enter your name" required />
+                <input type="text" placeholder="Enter your name" data-id="1" />
               </div>
 
               <div class="input-field">
                 <label> Date Of Birth </label>
-                <input
-                  type="date"
-                  placeholder="Enter your birth date"
-                  required
-                />
+                <input type="date" placeholder="Enter your birth date" />
               </div>
 
               <div class="input-field">
                 <label> Email </label>
-                <input
-                  type="text"
-                  placeholder="Enter your email address"
-                  required
-                />
+                <input type="text" placeholder="Enter your email address" />
               </div>
               <div class="input-field">
                 <label> Mobile Number </label>
-                <input
-                  type="number"
-                  placeholder="Enter mobile number"
-                  required
-                />
+                <input type="number" placeholder="Enter mobile number" />
               </div>
 
               <div class="input-field">
@@ -70,7 +58,7 @@
             </div>
           </div>
 
-          <div class="details ID">
+          <div class="details ID" data-id="1">
             <span class="title">Identity Details</span>
 
             <div class="fields">
@@ -80,22 +68,17 @@
                   class="text-file"
                   type="text"
                   placeholder="Enter your ID type"
-                  required
                 />
               </div>
 
               <div class="input-field">
                 <label> ID Number </label>
-                <input
-                  type="number"
-                  placeholder="Enter your ID number"
-                  required
-                />
+                <input type="number" placeholder="Enter your ID number" />
               </div>
 
               <div class="input-field">
                 <label> Issued Date </label>
-                <input type="date" placeholder="Enter issued date" required />
+                <input type="date" placeholder="Enter issued date" />
               </div>
 
               <div class="input-field">
@@ -142,20 +125,16 @@
 
               <div class="input-field">
                 <label> Expiry Date </label>
-                <input type="date" placeholder="Enter expiry date" required />
+                <input type="date" placeholder="Enter expiry date" />
               </div>
 
               <div class="input-field">
                 <label> PF Number </label>
-                <input
-                  type="text"
-                  placeholder="Enter your PF number"
-                  required
-                />
+                <input type="text" placeholder="Enter your PF number" />
               </div>
             </div>
 
-            <button class="nextBtn">
+            <button class="nextBtn" type="button">
               <span class="btnText">Next</span>
               <i class="uil uil-navigator"> </i>
             </button>
@@ -163,14 +142,14 @@
         </div>
 
         <!-- SECOND SECTION -->
-        <div class="form second">
-          <div class="details personal">
+        <div class="first-section form second" id="form-2">
+          <div class="details personal" data-id="2">
             <span class="title">Official Info</span>
 
             <div class="fields">
               <div class="input-field">
                 <label> Posting </label>
-                <input type="text" placeholder="Posting" required />
+                <input type="text" placeholder="Posting" />
               </div>
 
               <div class="input-field">
@@ -217,26 +196,22 @@
 
               <div class="input-field">
                 <label> Location</label>
-                <input
-                  type="text"
-                  placeholder="Enter your email address"
-                  required
-                />
+                <input type="text" placeholder="Enter your email address" />
               </div>
 
               <div class="input-field">
                 <label> Date Of First Appointment </label>
-                <input type="date" required />
+                <input type="date" />
               </div>
 
               <div class="input-field">
                 <label> Confirmation Date</label>
-                <input type="date" required />
+                <input type="date" />
               </div>
 
               <div class="input-field">
                 <label> Current Appointment Date </label>
-                <input type="date" required />
+                <input type="date" />
               </div>
             </div>
           </div>
@@ -245,17 +220,17 @@
             <div class="fields">
               <div class="input-field">
                 <label> Salary(CONRAISS) </label>
-                <input type="text" placeholder="Salary (CONRAISS)" required />
+                <input type="text" placeholder="Salary (CONRAISS)" />
               </div>
 
               <div class="input-field">
                 <label> Qualification </label>
-                <input type="text" placeholder="Qualification" required />
+                <input type="text" placeholder="Qualification" />
               </div>
 
               <div class="input-field">
                 <label> Designation </label>
-                <input type="text" placeholder="Designation" required />
+                <input type="text" placeholder="Designation" />
               </div>
 
               <div class="input-field">
@@ -268,7 +243,7 @@
 
               <div class="input-field">
                 <label> Nationality </label>
-                <input type="text" placeholder="nationality" required />
+                <input type="text" placeholder="nationality" />
               </div>
 
               <div class="input-field">
@@ -313,17 +288,24 @@
                 </select>
               </div>
 
-              <button class="nextBtnSecond">
-                <span class="btnText">Next</span>
-                <i class="uil uil-navigator"> </i>
-              </button>
+              <div class="buttons">
+                <div class="backBtn" type="button">
+                  <i class="uil uil-navigator"> </i>
+                  <span class="btnText">Back</span>
+                </div>
+
+                <button class="nextBtn">
+                  <span class="btnText">Next</span>
+                  <i class="uil uil-navigator"> </i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- THIRD SECTION -->
-        <div class="form third">
-          <div class="details personal">
+        <div class="first-section form third" id="form-3">
+          <div class="details personal" data-id="3">
             <span class="title">Upload Documents </span>
 
             <div class="fields">
@@ -333,7 +315,6 @@
                   type="file"
                   placeholder="Posting"
                   accept="image/jpeg, image/png, image/jpg"
-                  required
                 />
               </div>
 
@@ -343,7 +324,6 @@
                   type="file"
                   placeholder="Posting"
                   accept="image/jpeg, image/png, image/jpg"
-                  required
                 />
               </div>
 
@@ -353,7 +333,6 @@
                   type="file"
                   placeholder="Posting"
                   accept="image/jpeg, image/png, image/jpg"
-                  required
                 />
               </div>
 
@@ -363,7 +342,6 @@
                   type="file"
                   placeholder="Posting"
                   accept="image/jpeg, image/png, image/jpg"
-                  required
                 />
               </div>
 
@@ -373,7 +351,6 @@
                   type="file"
                   placeholder="Posting"
                   accept="image/jpeg, image/png, image/jpg"
-                  required
                 />
               </div>
 
@@ -383,7 +360,6 @@
                   type="file"
                   placeholder="Posting"
                   accept="image/jpeg, image/png, image/jpg"
-                  required
                 />
               </div>
 
@@ -393,7 +369,6 @@
                   type="file"
                   placeholder="Posting"
                   accept="image/jpeg, image/png, image/jpg"
-                  required
                 />
               </div>
             </div>
@@ -406,7 +381,7 @@
               </div>
 
               <button class="nextBtn">
-                <span class="btnText">Next</span>
+                <span class="btnText">Apply</span>
                 <i class="uil uil-navigator"> </i>
               </button>
             </div>

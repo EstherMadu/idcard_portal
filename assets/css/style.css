@@ -51,30 +51,9 @@ body {
 }
 
 .container form .form {
-  position: absolute;
+  position: relative;
   background-color: #fff;
   min-height: 490px;
-}
-
-.container form .form.third,
-.container form .form.second {
-  opacity: 0;
-  pointer-events: none;
-}
-
-form.secActive .form.second {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-form.secActive .form.first {
-  opacity: 0;
-  pointer-events: none;
-}
-
-form.secActive .form.third {
-  opacity: 0;
-  pointer-events: auto;
 }
 
 .container form .title {
@@ -98,6 +77,14 @@ form .fields .input-field {
   width: calc(100% / 3 - 15px);
   flex-direction: column;
   margin: 4px 0;
+}
+
+form .first-section {
+  display: none;
+}
+
+.first-section.active {
+  display: block;
 }
 
 .input-field label {
