@@ -2,9 +2,10 @@ const form = document.querySelector("form"),
   nextBtn = form.querySelector(".nextBtn"),
   // nextBtnSecond = form.querySelector(".nextBtnSecond"),
   backBtn = form.querySelector(".backBtn"),
-  allInput = form.querySelectorAll(".first input"),
-  allInputSecond = form.querySelectorAll(".second input"),
-  secondNext = form.querySelector(".nextBtn2");
+  secondBackBtn = form.querySelector(".backBtn3");
+(allInput = form.querySelectorAll(".first input")),
+  (allInputSecond = form.querySelectorAll(".second input")),
+  (secondNextBtn = form.querySelector(".nextBtn2"));
 const formId = document.getElementById("form-1");
 const nextForm = document.getElementById("form-2");
 const thirdForm = document.getElementById("form-3");
@@ -23,11 +24,12 @@ backBtn.addEventListener("click", () => {
   formId.classList.add("active");
 });
 
-secondNext.addEventListener("click", () => {
-  allInputSecond.forEach((input) => {
-    if (input.value == "") {
-      nextForm.classList.remove("active");
-      thirdForm.classList.add("active");
-    }
-  });
+secondNextBtn.addEventListener("click", () => {
+  nextForm.classList.remove("active");
+  thirdForm.classList.add("active");
+});
+
+secondBackBtn.addEventListener("click", () => {
+  thirdForm.classList.remove("active");
+  nextForm.classList.add("active");
 });
